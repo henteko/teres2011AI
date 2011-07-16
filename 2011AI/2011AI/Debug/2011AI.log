@@ -1,0 +1,33 @@
+﻿2011/07/16 11:23:50 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Documents and Settings\pepe2\デスクトップ\2011AI_20110712zip\2011AI\2011AI\2011AI.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "Debug\2011AI.unsuccessfulbuild" を作成しています。
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp make_Field.cpp next_Ai.cpp
+         make_Field.cpp
+         main.cpp
+         コードを生成中...
+         コンパイル中...
+         next_Ai.cpp
+         コードを生成中...
+       ManifestResourceCompile:
+         すべての出力が最新のものです。
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\pepe2\デスクトップ\2011AI_20110712zip\2011AI\Debug\2011AI.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\2011AI.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\pepe2\デスクトップ\2011AI_20110712zip\2011AI\Debug\2011AI.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\pepe2\デスクトップ\2011AI_20110712zip\2011AI\Debug\2011AI.lib" /MACHINE:X86 Debug\2011AI.exe.embed.manifest.res
+         Debug\main.obj
+         Debug\make_Field.obj
+         Debug\next_Ai.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\2011AI.exe.embed.manifest" /manifest Debug\2011AI.exe.intermediate.manifest
+         すべての出力が最新のものです。
+       LinkEmbedManifest:
+         すべての出力が最新のものです。
+         2011AI.vcxproj -> C:\Documents and Settings\pepe2\デスクトップ\2011AI_20110712zip\2011AI\Debug\2011AI.exe
+       FinalizeBuildStatus:
+         ファイル "Debug\2011AI.unsuccessfulbuild" を削除しています。
+         "Debug\2011AI.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "C:\Documents and Settings\pepe2\デスクトップ\2011AI_20110712zip\2011AI\2011AI\2011AI.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:06.51
