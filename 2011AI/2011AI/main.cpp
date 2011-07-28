@@ -4,6 +4,8 @@
 int Field[CARD_MARK][CARD_NUM_MAX][2];
 AI_T ai[AI_NUM];
 
+int N_sort_num = CARD_NUM_MAX / 2;
+
 int gameMode = 0;
 
 int gameCount = 0;
