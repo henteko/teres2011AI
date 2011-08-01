@@ -4,3 +4,5 @@
 テテテス
 teastト
 testですよMeeGo
+void update_feild.cppを安全に削除したよ
+git上にも削除を反映させるには、git rm ファイル名 をやると安全に削除できるよ
