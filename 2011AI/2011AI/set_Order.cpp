@@ -1,7 +1,7 @@
 //tao31’S“–set_Order8/17//
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "include.h"
+
+
 void set_Order(){
 	srand((unsigned int)time(NULL));
 	int i;
@@ -21,4 +21,5 @@ void set_Order(){
 		else {
 			i = i - 1;
 			}
-			return 0;}
+	}
+}
