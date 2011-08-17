@@ -2,17 +2,15 @@
 
 
 int check_Hand(int order_Ai){
-	int i=0;
-	int j=0;
-	for(i=0;i<CARD_MARK;i++){
-		for(j=1:j<=CARD_NUM_MAX;j++){
-			if(/*èD‚ª‚O–‡*/){
-				return 1;
-			}
-			else {
-				/*èD‚ª‚O–‡‚¶‚á‚È‚¢*/
+	const int   handNum = sizeof ai[order_AI].hand /sizeof ai[order_AI].hand[0];
+
+	for(int i=0;i < handNum; i++){
+		if(ai[order_AI].hand[i]!=0/*èD‚ª‚O‚¶‚á‚È‚¢*/){
 				return 0;
 			}
-		}
+			else {
+				/*èD‚ª‚O–‡*/
+				return 1;
+			}
 	}
 }
