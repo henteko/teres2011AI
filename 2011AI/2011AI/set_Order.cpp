@@ -11,12 +11,12 @@ void set_Order(){
 		int flag = 0;
 		
 		for(int j=0;j<AI_NUM;j++){
-			if(Order_AI[i] == tmp){
+			if(order_Ai[i] == tmp){
 				flag = 1;
 			}
 		}
 		if(flag==0){
-			Order_AI[i] == tmp;
+			order_Ai[i] == tmp;
 			}
 		else {
 			i = i - 1;
