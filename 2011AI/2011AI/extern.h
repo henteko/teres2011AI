@@ -21,8 +21,11 @@ extern int gameCount;
 
 extern int order_Ai[AI_NUM];
 
+extern int N_sort_num;
+
 extern int rank;
 
+extern int Hand_max_num;
 /*
 *	ŠÖ”
 */
@@ -65,5 +68,10 @@ extern int ai_Rank(int order_Ai);
 
 //I‚í‚è‚©‚Ç‚¤‚©‚ğ”»’è
 extern int is_End();
+
+//ÅŒã‚ÌŒãˆ—
+extern void finish_Ran();
+
+extern void init_Game();
 
 #endif	// !_EXTERN_H_

@@ -15,8 +15,12 @@ int order_Ai[AI_NUM];
 
 int rank = 1;
 
+int Hand_max_num = CARD_MARK * CARD_NUM_MAX / AI_NUM + 1;
 
 void main(void) {
+	
+	//最初だけ初期化するやつを初期化
+	init_Game();
 
 	//mainのループ
 	while(gameCount < MAX_GAME_NUM) {
@@ -26,29 +30,33 @@ void main(void) {
 				make_Field();
 				//int* shuffled_Card = shuffle_Card();	//未実装
 				//distribute_Card(shuffled_Card);	//未実装
-				//init_Ai();	//未実装
-				//set_Order();	//未実装
+				init_Ai();	//未実装☆
+				set_Order();	//未実装☆
 
 				rank = 1;
 
 				gameMode++;
 				break;
 			case 1:
-				/*
+				
 				for(int i=0;i<AI_NUM;i++) {
 					if(ai_Rank(order_Ai[i]) == 0) {
 						//AIのランクが初期値(0)だった時に実行
-						//next_Ai(order_[i]);	//未実装
+						next_Ai(order_Ai[i]);	//未実装
 					}
 				}
 				if(is_End()) {
 					gameMode = 2;
+					printf("全員順位決まったから終了\n");	
+				}else {
+					printf("ここが実行されたらis_End()は正常\n");	
 				}
-				*/
+				//デバック用
 				gameMode = 2;
 				break;
 			case 2:
 				//エンディング
+				finish_Ran();
 				gameCount++;
 				break;
 			default:

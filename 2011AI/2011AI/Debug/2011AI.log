@@ -1,34 +1,39 @@
-﻿2011/07/21 12:30:10 にビルドを開始しました。
-     1>ノード 2 上のプロジェクト "C:\Users\Hideaki\Desktop\TeRes2011AI\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット)。
+﻿2011/08/20 0:53:26 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Documents and Settings\pepe2\My Documents\Visual Studio 2010\Projects\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット)。
      1>InitializeBuildStatus:
          "AlwaysCreate" が指定されたため "Debug\2011AI.unsuccessfulbuild" を作成しています。
        ClCompile:
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp make_Field.cpp next_Ai.cpp start_Ai.cpp
-         start_Ai.cpp
-         next_Ai.cpp
-         make_Field.cpp
-         main.cpp
-         コードを生成中...
+         すべての出力が最新のものです。
        ManifestResourceCompile:
-         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\2011AI.exe.embed.manifest.res" Debug\2011AI_manifest.rc 
+         すべての出力が最新のものです。
        Link:
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Hideaki\Desktop\TeRes2011AI\teres2011AI\2011AI\Debug\2011AI.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\2011AI.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Hideaki\Desktop\TeRes2011AI\teres2011AI\2011AI\Debug\2011AI.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Hideaki\Desktop\TeRes2011AI\teres2011AI\2011AI\Debug\2011AI.lib" /MACHINE:X86 Debug\2011AI.exe.embed.manifest.res
+         すべての出力が最新のものです。
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\pepe2\My Documents\Visual Studio 2010\Projects\teres2011AI\2011AI\Debug\2011AI.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\2011AI.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\pepe2\My Documents\Visual Studio 2010\Projects\teres2011AI\2011AI\Debug\2011AI.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\pepe2\My Documents\Visual Studio 2010\Projects\teres2011AI\2011AI\Debug\2011AI.lib" /MACHINE:X86 Debug\2011AI.exe.embed.manifest.res
+         Debug\ai_Rank.obj
+         Debug\check_Hand.obj
+         Debug\finish_Ran.obj
+         Debug\init_Ai.obj
+         Debug\init_Game.obj
+         Debug\is_End.obj
+         Debug\judge_Pass.obj
          Debug\main.obj
          Debug\make_Field.obj
          Debug\next_Ai.obj
+         Debug\set_Order.obj
+         Debug\shuffle_card.obj
          Debug\start_Ai.obj
-         LINK : 前回のインクリメンタル リンクで C:\Users\Hideaki\Desktop\TeRes2011AI\teres2011AI\2011AI\Debug\2011AI.exe が見つからなかったか、ビルドされませんでした。フル リンクを行います。
+         Debug\update_Field.obj
        Manifest:
          C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\2011AI.exe.embed.manifest" /manifest Debug\2011AI.exe.intermediate.manifest
          すべての出力が最新のものです。
        LinkEmbedManifest:
          すべての出力が最新のものです。
-         2011AI.vcxproj -> C:\Users\Hideaki\Desktop\TeRes2011AI\teres2011AI\2011AI\Debug\2011AI.exe
+         2011AI.vcxproj -> C:\Documents and Settings\pepe2\My Documents\Visual Studio 2010\Projects\teres2011AI\2011AI\Debug\2011AI.exe
        FinalizeBuildStatus:
          ファイル "Debug\2011AI.unsuccessfulbuild" を削除しています。
          "Debug\2011AI.lastbuildstate" のタッチ タスクを実行しています。
-     1>プロジェクト "C:\Users\Hideaki\Desktop\TeRes2011AI\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット) のビルドが完了しました。
+     1>プロジェクト "C:\Documents and Settings\pepe2\My Documents\Visual Studio 2010\Projects\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
 
-経過時間 00:00:04.53
+経過時間 00:00:01.48

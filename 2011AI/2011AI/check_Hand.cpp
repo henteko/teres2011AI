@@ -2,9 +2,10 @@
 
 
 int check_Hand(int order_Ai){
-	const int   handNum = sizeof ai[order_AI].hand /sizeof ai[order_AI].hand[0];
-	for(int i=0;i < handNum; i++){
-		if(ai[order_AI].hand[i]!=0/*ŽèŽD‚ª‚O‚¶‚á‚È‚¢*/){
+	printf("check_Hand() start!\n");
+
+	for(int i=0;i < Hand_max_num; i++){
+		if(ai[order_Ai].hand[i]!=0/*ŽèŽD‚ª‚O‚¶‚á‚È‚¢*/){
 				return 0;
 			}
 	}

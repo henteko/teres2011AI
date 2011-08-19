@@ -3,23 +3,34 @@
 
 
 void set_Order(){
+	printf("set_Order() start!\n");
+
+	for(int i=0;i<AI_NUM;i++) {
+		order_Ai[i] = -1;
+	}
+
 	srand((unsigned int)time(NULL));
 	int i;
-	for(i=0;i<AI_NUM;i++);
-	{
+	for(i=0;i<AI_NUM;i++) {
 		int tmp = rand()%AI_NUM;
 		int flag = 0;
 		
 		for(int j=0;j<AI_NUM;j++){
-			if(order_Ai[i] == tmp){
+			if(order_Ai[j] == tmp){
 				flag = 1;
 			}
 		}
 		if(flag==0){
-			order_Ai[i] == tmp;
-			}
+			order_Ai[i] = tmp;
+		}
 		else {
 			i = i - 1;
-			}
+		}
 	}
+
+	for(int z=0;z<AI_NUM;z++) {
+		printf("%d\n",order_Ai[z]);
+	}
+
+
 }
