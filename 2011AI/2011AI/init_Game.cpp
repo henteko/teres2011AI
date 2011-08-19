@@ -8,6 +8,8 @@ void init_Game() {
 		N_sort_num = N_sort_num + 1;
 	}
 
+	printf("‚±‚ÌƒQ[ƒ€‚Í%d•À‚×‚Å‚·\n",N_sort_num);
+
 	//hand‚Ìİ’è
 	for(int i=0;i<AI_NUM;i++) {
 		ai[i].hand = (int *)malloc(sizeof(int) * Hand_max_num);

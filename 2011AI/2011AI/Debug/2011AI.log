@@ -1,13 +1,13 @@
-﻿2011/08/20 0:53:26 にビルドを開始しました。
+﻿2011/08/20 2:00:44 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\Documents and Settings\pepe2\My Documents\Visual Studio 2010\Projects\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット)。
      1>InitializeBuildStatus:
          "AlwaysCreate" が指定されたため "Debug\2011AI.unsuccessfulbuild" を作成しています。
        ClCompile:
-         すべての出力が最新のものです。
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt make_Field.cpp
+         make_Field.cpp
        ManifestResourceCompile:
          すべての出力が最新のものです。
        Link:
-         すべての出力が最新のものです。
          C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\pepe2\My Documents\Visual Studio 2010\Projects\teres2011AI\2011AI\Debug\2011AI.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\2011AI.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\pepe2\My Documents\Visual Studio 2010\Projects\teres2011AI\2011AI\Debug\2011AI.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\pepe2\My Documents\Visual Studio 2010\Projects\teres2011AI\2011AI\Debug\2011AI.lib" /MACHINE:X86 Debug\2011AI.exe.embed.manifest.res
          Debug\ai_Rank.obj
          Debug\check_Hand.obj
@@ -36,4 +36,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:01.48
+経過時間 00:00:02.04

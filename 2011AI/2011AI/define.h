@@ -12,7 +12,7 @@
 #define MAX_GAME_NUM 1
 
 //AI‚Ì”
-#define AI_NUM 3
+#define AI_NUM 4
 
 //ƒpƒX‚ÌãŒÀ
 #define PASS_MAX 4
