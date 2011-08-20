@@ -49,7 +49,7 @@ extern void set_Order();
 extern void next_Ai(int order_Ai);
 
 //AIのexeファイル起動
-extern int start_Ai(int AI_no);
+extern int start_Ai(int order_Ai);
 
 //AIからの返値が正しいかどうか判断
 extern int judge_Num(int return_start_Ai);

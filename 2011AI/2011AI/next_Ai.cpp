@@ -6,7 +6,7 @@ void next_Ai(int order_Ai) {
 
 	
 	//return_start_Ai‚É‚ÍAI.exe‚Ì•Ô’l‚ª“ü‚é
-	//int return_start_Ai = start_Ai(order_Ai);	//–¢À‘•
+	int return_start_Ai = start_Ai(order_Ai);	//–¢À‘•
 
 	//if(judge_num(return_start_Ai)) {
 		//³‚µ‚¢ê‡
