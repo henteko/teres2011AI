@@ -6,13 +6,13 @@
 
 
 //AI.exeファイルへのベースパス
-#define BASE_PATH "testだお(＾q＾)"
+#define BASE_PATH "こんなもの、最初からなかったんや"
 
 //何回ゲームを繰り返しやらせるか
 #define MAX_GAME_NUM 1
 
 //AIの数
-#define AI_NUM 4
+#define AI_NUM 2
 
 //パスの上限
 #define PASS_MAX 4

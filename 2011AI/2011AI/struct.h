@@ -15,11 +15,11 @@ typedef struct GM	//ゲームマネージャー構造体
 typedef struct AI	// 1つのAIの型
 {
 	int no;		//AIの識別番号
-	char* name;	//AIの名前:可変長配列として使用
+	char name[100];	//AIの名前
 	int *hand;	//手持ちのカード:可変長配列として使用
 	int pass;	//パスした回数
 	int rank;	//順位
-	char* path;	//AIのexeファイルへのパス:可変長配列として使用
+	char path[255];	//AIのexeファイルへのパス
 
 } AI_T;
 

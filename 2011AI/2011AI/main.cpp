@@ -17,8 +17,25 @@ int rank = 1;
 
 int Hand_max_num = CARD_MARK * CARD_NUM_MAX / AI_NUM + 1;
 
+//カレントディレクトリの文字列を入れる配列
+//C:\～\AI\ が入る
+char Current_dir[255];
+
+
+
 void main(void) {
 	
+	/*******************************
+	  カレントディレクトリの設定
+	わかりやすいよう、あえてここで設定
+	本当にわかりやすいかは、君しだい
+	*******************************/
+	GetCurrentDirectory(255,Current_dir);
+	strcat_s(Current_dir,"\\AI\\");
+	printf("カレントディレクトリ:%s\n",Current_dir);
+
+
+
 	//最初だけ初期化するやつを初期化
 	init_Game();
 
@@ -56,8 +73,9 @@ void main(void) {
 				break;
 			case 2:
 				//エンディング
-				finish_Ran();
+				//finish_Ran();
 				gameCount++;
+				gameMode = 0;
 				break;
 			default:
 				gameMode = 999;

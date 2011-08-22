@@ -6,3 +6,4 @@
 #include"extern.h"
 #include<time.h>
 #include<stdlib.h>
+#include<Windows.h>

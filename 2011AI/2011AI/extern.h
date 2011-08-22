@@ -26,6 +26,8 @@ extern int N_sort_num;
 extern int rank;
 
 extern int Hand_max_num;
+
+extern char Current_dir[255];
 /*
 *	ŠÖ”
 */

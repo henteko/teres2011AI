@@ -6,7 +6,7 @@ void next_Ai(int order_Ai) {
 
 	
 	//return_start_Ai‚É‚ÍAI.exe‚Ì•Ô’l‚ª“ü‚é
-	int return_start_Ai = start_Ai(order_Ai);	//–¢À‘•
+	int return_start_Ai = start_Ai(order_Ai); //À‘•“r’†?
 
 	//if(judge_num(return_start_Ai)) {
 		//³‚µ‚¢ê‡
@@ -15,8 +15,8 @@ void next_Ai(int order_Ai) {
 		//update_Field(return_start_Ai);
 		if(check_Hand(order_Ai)) {
 			//èD‚ª0‚Åã‚ª‚Á‚Ä‚¢‚½‚ç
-			//ai[order_Ai].rank = rank;
-			//rank++;
+			ai[order_Ai].rank = rank;
+			rank++;
 			printf("èDƒ[ƒ‚Åã‚ª‚è‚Å‚·\n");
 		}
 	//}else {

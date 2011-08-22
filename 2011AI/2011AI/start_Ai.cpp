@@ -9,6 +9,95 @@ int start_Ai(int order_Ai){
 	‚È‚ñ‚Æ‚©‚Å‚«‚Ü‚µ‚½‚æ` by HK
 	*/
 
+
+	char hoge[10000];
+	strcpy_s(hoge, ai[order_Ai].path);
+	strcat_s(hoge, " ");
+
+	char charP[100];
+
+
+
+	/**************************
+		ê‚Ì‘}“ü
+	**************************/
+	for(int i=0;i<CARD_MARK;i++) {
+		for(int j=0;j<CARD_NUM_MAX;j++) {
+			sprintf_s(charP,"%d",Field[i][j][0]);
+			strcat_s(charP,"\\");
+			strcat_s(hoge,charP);
+		}
+	}
+
+	strcat_s(hoge," ");
+
+	/**************************
+		ê‚É’N‚ªo‚µ‚½‚©‚Ì‘}“ü
+	**************************/
+	for(int i=0;i<CARD_MARK;i++) {
+		for(int j=0;j<CARD_NUM_MAX;j++) {
+			sprintf_s(charP,"%d",Field[i][j][1]);
+			strcat_s(charP,"\\");
+			strcat_s(hoge,charP);
+		}
+	}
+
+	strcat_s(hoge," ");
+
+	/**************************
+		èD‚Ì‘}“ü
+	**************************/
+	for(int i=0;i<Hand_max_num;i++) {
+		sprintf_s(charP,"%d",ai[order_Ai].hand[i]);
+		strcat_s(charP,"\\");
+		strcat_s(hoge,charP);
+	}
+
+	strcat_s(hoge," ");
+
+
+	/**************************
+		İ’è—Ş‚Ì‚Ì‘}“ü
+	**************************/
+	sprintf_s(charP,"%d",AI_NUM);
+	strcat_s(charP,"\\");
+	strcat_s(hoge,charP);
+
+	strcat_s(hoge," ");
+
+	sprintf_s(charP,"%d",PASS_MAX);
+	strcat_s(charP,"\\");
+	strcat_s(hoge,charP);
+
+	strcat_s(hoge," ");
+
+	sprintf_s(charP,"%d",CARD_MARK);
+	strcat_s(charP,"\\");
+	strcat_s(hoge,charP);
+
+	strcat_s(hoge," ");
+
+	sprintf_s(charP,"%d",CARD_NUM_MAX);
+	strcat_s(charP,"\\");
+	strcat_s(hoge,charP);
+
+	strcat_s(hoge," ");
+
+	sprintf_s(charP,"%d",Hand_max_num);
+	strcat_s(charP,"\\");
+	strcat_s(hoge,charP);
+
+	strcat_s(hoge," ");
+
+
+	printf("%s\n",hoge);
+
+	//exeƒtƒ@ƒCƒ‹Às&•Ô’l‘ã“ü
+	int ret = system(hoge);
+	
+	printf("exe‚©‚ç‚Ì•Ô‚èŒŒ:%d\n",ret);
+
+
 	return 0;
 
 }
