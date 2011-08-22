@@ -1,5 +1,5 @@
-﻿2011/08/23 2:49:39 にビルドを開始しました。
-     1>ノード 2 上のプロジェクト "C:\teres\C言語プログラミング\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット)。
+﻿2011/08/23 3:04:55 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\teres\C\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット)。
      1>InitializeBuildStatus:
          "AlwaysCreate" が指定されたため "Debug\2011AI.unsuccessfulbuild" を作成しています。
        ClCompile:
@@ -13,8 +13,8 @@
        FinalizeBuildStatus:
          ファイル "Debug\2011AI.unsuccessfulbuild" を削除しています。
          "Debug\2011AI.lastbuildstate" のタッチ タスクを実行しています。
-     1>プロジェクト "C:\teres\C言語プログラミング\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット) のビルドが完了しました。
+     1>プロジェクト "C:\teres\C\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
 
-経過時間 00:00:00.29
+経過時間 00:00:00.28
