@@ -89,6 +89,12 @@ int start_Ai(int order_Ai){
 
 	strcat_s(hoge," ");
 
+	sprintf_s(charP,"%d",ai[order_Ai].pass);
+	strcat_s(charP,"\\");
+	strcat_s(hoge,charP);
+
+	strcat_s(hoge," ");
+
 
 	printf("%s\n",hoge);
 
