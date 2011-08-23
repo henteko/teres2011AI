@@ -45,9 +45,9 @@ void main(void) {
 			case 0:
 				//‰Šú‰»Œn
 				make_Field();
+				init_Ai();	//–¢À‘•™
 				//int* shuffled_Card = shuffle_Card();	//–¢À‘•
 				//distribute_Card(shuffled_Card);	//–¢À‘•
-				init_Ai();	//–¢À‘•™
 				set_Order();	//–¢À‘•™
 
 				rank = 1;

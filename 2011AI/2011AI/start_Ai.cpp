@@ -98,6 +98,6 @@ int start_Ai(int order_Ai){
 	printf("exe‚©‚ç‚Ì•Ô‚èŒŒ:%d\n",ret);
 
 
-	return 0;
+	return ret;
 
 }

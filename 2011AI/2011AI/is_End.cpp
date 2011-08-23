@@ -5,7 +5,7 @@ int is_End()
 	printf("is_End() start!\n");
 
 	int i;
-	for(i=0;i<=AI_NUM;i++)
+	for(i=0;i<AI_NUM;i++)
 	{
 		if(ai[i].rank==0)
 		{
