@@ -28,6 +28,8 @@ extern int rank;
 extern int Hand_max_num;
 
 extern char Current_dir[255];
+
+extern int shuffle_Card_result[CARD_NUM_MAX * CARD_MARK - CARD_MARK];
 /*
 *	関数
 */
@@ -36,10 +38,10 @@ extern char Current_dir[255];
 extern void make_Field();
 
 //カードをシャッフルする
-extern int* shuffle_Card();
+extern void shuffle_Card();
 
 //カードを配る
-extern void distribute_Card(int* shuffled_Card);
+extern void distribute_Card();
 
 //AIの初期化
 extern void init_Ai();

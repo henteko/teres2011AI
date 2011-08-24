@@ -21,6 +21,7 @@ int Hand_max_num = CARD_MARK * CARD_NUM_MAX / AI_NUM + 1;
 //C:\`\AI\ ‚ª“ü‚é
 char Current_dir[255];
 
+int shuffle_Card_result[CARD_NUM_MAX * CARD_MARK - CARD_MARK];
 
 
 void main(void) {
@@ -46,8 +47,8 @@ void main(void) {
 				//‰Šú‰»Œn
 				make_Field();
 				init_Ai();	//–¢À‘•™
-				//int* shuffled_Card = shuffle_Card();	//–¢À‘•
-				//distribute_Card(shuffled_Card);	//–¢À‘•
+				//shuffle_Card();	//–¢À‘•
+				//distribute_Card();	//–¢À‘•
 				set_Order();	//–¢À‘•™
 
 				rank = 1;
