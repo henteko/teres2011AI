@@ -12,7 +12,7 @@ void next_Ai(int order_Ai) {
 		//³‚µ‚¢ê‡
 
 		//ê‚ÌXV
-		update_Field(return_start_Ai);
+		update_Field(return_start_Ai,order_Ai);
 		if(check_Hand(order_Ai)) {
 			//èD‚ª0‚Åã‚ª‚Á‚Ä‚¢‚½‚ç
 			ai[order_Ai].rank = rank;

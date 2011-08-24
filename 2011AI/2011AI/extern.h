@@ -62,7 +62,7 @@ extern int judge_Num(int return_start_Ai);
 extern int judge_Pass(int order_Ai);
 
 //ê‚ğXV‚·‚é
-extern void update_Field(int return_start_Ai);
+extern void update_Field(int return_start_Ai,int order_Ai);
 
 //èD‚ª0‚©‚Ç‚¤‚©‚Ì”»’f
 extern int check_Hand(int order_Ai);
