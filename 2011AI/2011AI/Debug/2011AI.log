@@ -1,20 +1,23 @@
-﻿2011/08/24 21:44:05 にビルドを開始しました。
-     1>ノード 2 上のプロジェクト "C:\teres\C\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット)。
+﻿2011/08/31 21:43:00 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\kemukemu\.ssh\7narabe\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット)。
      1>InitializeBuildStatus:
-         "AlwaysCreate" が指定されたため "Debug\2011AI.unsuccessfulbuild" を作成しています。
+         "Debug\2011AI.unsuccessfulbuild" のタッチ タスクを実行しています。
        ClCompile:
-         すべての出力が最新のものです。
-       ManifestResourceCompile:
-         すべての出力が最新のものです。
-       Link:
-         すべての出力が最新のものです。
-       Manifest:
-         すべての出力が最新のものです。
-       FinalizeBuildStatus:
-         ファイル "Debug\2011AI.unsuccessfulbuild" を削除しています。
-         "Debug\2011AI.lastbuildstate" のタッチ タスクを実行しています。
-     1>プロジェクト "C:\teres\C\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット) のビルドが完了しました。
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt shuffle_card.cpp
+         shuffle_card.cpp
+     1>c:\users\kemukemu\.ssh\7narabe\teres2011ai\2011ai\2011ai\shuffle_card.cpp(20): error C2065: 'CARD_NUM_MAX' : 定義されていない識別子です。
+     1>c:\users\kemukemu\.ssh\7narabe\teres2011ai\2011ai\2011ai\shuffle_card.cpp(21): error C2065: 'NULL' : 定義されていない識別子です。
+     1>c:\users\kemukemu\.ssh\7narabe\teres2011ai\2011ai\2011ai\shuffle_card.cpp(21): error C3861: 'srand': 識別子が見つかりませんでした
+     1>c:\users\kemukemu\.ssh\7narabe\teres2011ai\2011ai\2011ai\shuffle_card.cpp(21): error C3861: 'time': 識別子が見つかりませんでした
+     1>c:\users\kemukemu\.ssh\7narabe\teres2011ai\2011ai\2011ai\shuffle_card.cpp(23): error C2065: 'CARD_NUM_MAX' : 定義されていない識別子です。
+     1>c:\users\kemukemu\.ssh\7narabe\teres2011ai\2011ai\2011ai\shuffle_card.cpp(30): error C2065: 'CARD_NUM_MAX' : 定義されていない識別子です。
+     1>c:\users\kemukemu\.ssh\7narabe\teres2011ai\2011ai\2011ai\shuffle_card.cpp(33): error C2065: 'CARD_NUM_MAX' : 定義されていない識別子です。
+     1>c:\users\kemukemu\.ssh\7narabe\teres2011ai\2011ai\2011ai\shuffle_card.cpp(36): error C3861: 'rand': 識別子が見つかりませんでした
+     1>c:\users\kemukemu\.ssh\7narabe\teres2011ai\2011ai\2011ai\shuffle_card.cpp(43): error C2065: 'CARD_NUM_MAX' : 定義されていない識別子です。
+     1>c:\users\kemukemu\.ssh\7narabe\teres2011ai\2011ai\2011ai\shuffle_card.cpp(49): warning C4138: 始まりのデリミターがない閉じのコメントデリミター (*/) が見つかりました。
+     1>c:\users\kemukemu\.ssh\7narabe\teres2011ai\2011ai\2011ai\shuffle_card.cpp(49): error C2059: 構文エラー : '/'
+     1>プロジェクト "C:\Users\kemukemu\.ssh\7narabe\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット) のビルドが終了しました -- 失敗。
 
-ビルドに成功しました。
+ビルドに失敗しました。
 
-経過時間 00:00:01.07
+経過時間 00:00:00.27

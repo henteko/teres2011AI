@@ -3,7 +3,7 @@
 int judge_Num(int return_start_Ai)
 {
 int r = return_start_Ai;
-for(int i=0;i<=CARD_MARK;i++)
+for(int i=0;i<CARD_MARK;i++)
 {
 	for(int j=1;j<=CARD_NUM_MAX;j++)
 	{
