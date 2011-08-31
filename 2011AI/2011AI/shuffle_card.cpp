@@ -1,6 +1,7 @@
 
-
- void shuffle_Card(void)
+#include"include.h"
+ 
+void shuffle_Card(void)
  {
 	   
      int n[CARD_MARK*CARD_NUM_MAX-CARD_MARK];
