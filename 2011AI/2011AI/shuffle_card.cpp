@@ -12,13 +12,19 @@ void shuffle_Card(void)
      for(int s=0; s<CARD_MARK*CARD_NUM_MAX-CARD_MARK;s++)
 	  {
 	    
-			 n[s]=NUMcard;
-		  NUMcard++;
-		  if(NUMcard==7||NUMcard==14||NUMcard==21||NUMcard==32)
-		  {
-		  NUMcard++;
-		  }
-		 
+		n[s]=NUMcard;
+		NUMcard++;
+	       
+		
+		   for(int i=0;i<CARD_NUM;i++)
+		    { for(int j=0;j<CARD_NUM_MAX;j++)
+		     {
+			  if(Field[i][j][0] == 1)
+			  {
+				  NUMcard++;
+			  } 
+		     } 
+		    }
 		
       }
 	 
