@@ -1,37 +1,31 @@
 
 
-/*
-説明
-returnだと配列は返せないので
-int mainのほうで
-int shuffle_card_result[CARD_NUM_MAX]
-と宣言しています。
-そしてshuffle_card関数の引数をshuffle_card_resultとすることで
-擬似的に配列を返す仕様になっています。
-。
-
-さらに配列の大きさ指定には変数は使えないので
-#define CARD_NUM_MAX 52
-と宣言してようやっと動くようになっています。
-
-*/
- void shuffle_card(int shuffle_card_result[])
+ void shuffle_Card(void)
  {
 	   
-     int n[CARD_NUM_MAX];
+     int n[CARD_MARK*CARD_NUM_MAX-CARD_MARK];
+	 
 	 srand( (unsigned)time( NULL ) );
-	  int NUMcard = 1;
-	  for(int j=0; j<CARD_NUM_MAX;j++)
+	 
+	 int NUMcard = 1; 
+     for(int s=0; s<CARD_MARK*CARD_NUM_MAX-CARD_MARK;s++)
 	  {
-	    n[j]=NUMcard;
-		NUMcard++;
-	  }
+	    
+			 n[s]=NUMcard;
+		  NUMcard++;
+		  if(NUMcard==7||NUMcard==14||NUMcard==21||NUMcard==32)
+		  {
+		  NUMcard++;
+		  }
+		 
+		
+      }
 	 
 	 
-	 int ran=CARD_NUM_MAX;
+	 int ran=CARD_MARK*CARD_NUM_MAX-CARD_MARK;
 	 int temp;
 	 
-	 for(int j=CARD_NUM_MAX; j>0;j--)
+	 for(int j=CARD_MARK*CARD_NUM_MAX-CARD_MARK; j>0;j--)
 	 {
 	 int p=j-1;
 	 int t=rand()%ran;
@@ -41,9 +35,12 @@ int shuffle_card_result[CARD_NUM_MAX]
 		 ran=ran-1;
 	 }
 	 
-	 for(int j=0; j<CARD_NUM_MAX;j++)
+	 for(int j=0; j<CARD_MARK*CARD_NUM_MAX-CARD_MARK;j++)
 	  {
-	 shuffle_card_result[j]=n[j];
-	 }
-	
-}
+	 shuffle_Card_result[j]=n[j];
+	 }	
+ }
+
+
+
+ 
