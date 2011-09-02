@@ -1,33 +1,37 @@
-
 #include"include.h"
  
-void shuffle_Card(void)
+ void shuffle_Card(void)
  {
 	   
      int n[CARD_MARK*CARD_NUM_MAX-CARD_MARK];
 	 
 	 srand( (unsigned)time( NULL ) );
 	 
-	 int NUMcard = 1; 
+	 int NUMcard = 1;
+	 int flag =0; 
      for(int s=0; s<CARD_MARK*CARD_NUM_MAX-CARD_MARK;s++)
 	  {
-	    
-		n[s]=NUMcard;
-		NUMcard++;
-	       
+	         flag=0;
+			 n[s]=NUMcard;
+		  NUMcard++;
+
+
+		  for(int i=0;i<CARD_MARK;i++)
+		  {for(int j=0;j<CARD_NUM_MAX;j++)
+		  {
+		   if((((CARD_NUM_MAX*i)+j)+1)==NUMcard)
+		   {
+			   if(Field[i][j][0]==1){
+				   flag=1;
+			   }
+		   }
+		  }
+		  }
 		
-		   for(int i=0;i<CARD_NUM;i++)
-		    { for(int j=0;j<CARD_NUM_MAX;j++)
-		     {
-			  if(Field[i][j][0] == 1)
-			  {
-				  NUMcard++;
-			  } 
-		     } 
-		    }
-		
-      }
-	 
+      if(flag){
+		  NUMcard++;
+	  }
+	 }
 	 
 	 int ran=CARD_MARK*CARD_NUM_MAX-CARD_MARK;
 	 int temp;
@@ -47,7 +51,3 @@ void shuffle_Card(void)
 	 shuffle_Card_result[j]=n[j];
 	 }	
  }
-
-
-
- 
