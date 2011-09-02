@@ -5,7 +5,7 @@ void pass_Max(int order_Ai) {
 	debug_printf("pass_Max start!!\n");
 
 	//パスを４回使った時の処理
-	ai[order_Ai].point = AI_NUM + 100;
+	ai[order_Ai].point = AI_NUM + 10;
 	printf("%sは、パスを%d回以上使いました\n",ai[order_Ai].name,PASS_MAX);
 
 
