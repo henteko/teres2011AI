@@ -25,9 +25,9 @@ void update_Field(int return_start_Ai,int order_Ai)
 
 	for(int i=0;i<CARD_MARK;i++) {
 		for(int j=0;j<CARD_NUM_MAX;j++) {
-			printf(" %d ",Field[i][j][0]);
+			debug_printf(" %d ",Field[i][j][0]);
 		}
-		printf("\n");
+		debug_printf("\n");
 	}
 
 }

@@ -3,7 +3,7 @@
 
 
 void set_Order(){
-	printf("set_Order() start!\n");
+	debug_printf("set_Order() start!\n");
 
 	for(int i=0;i<AI_NUM;i++) {
 		order_Ai[i] = -1;
@@ -29,7 +29,7 @@ void set_Order(){
 	}
 
 	for(int z=0;z<AI_NUM;z++) {
-		printf("%d\n",order_Ai[z]);
+		debug_printf("%d\n",order_Ai[z]);
 	}
 
 

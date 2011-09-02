@@ -20,6 +20,7 @@ typedef struct AI	// 1つのAIの型
 	int pass;	//パスした回数
 	int rank;	//順位
 	char path[255];	//AIのexeファイルへのパス
+	int sum_rank;
 
 } AI_T;
 

@@ -1,10 +1,10 @@
-﻿2011/09/02 21:29:57 にビルドを開始しました。
+﻿2011/09/02 22:32:57 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\teres\C\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット)。
      1>InitializeBuildStatus:
          "AlwaysCreate" が指定されたため "Debug\2011AI.unsuccessfulbuild" を作成しています。
        ClCompile:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Judge_Num.cpp
-         Judge_Num.cpp
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
        ManifestResourceCompile:
          すべての出力が最新のものです。
        Link:
@@ -38,4 +38,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:03.04
+経過時間 00:00:02.98

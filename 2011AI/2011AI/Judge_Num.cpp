@@ -3,7 +3,7 @@
 int judge_Num(int return_start_Ai)
 {
 
-	printf("judge_Num start!!\n");
+	debug_printf("judge_Num start!!\n");
 
 	int r = return_start_Ai;
 

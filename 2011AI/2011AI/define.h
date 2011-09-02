@@ -23,4 +23,13 @@
 //ƒJ[ƒh‚Ì”š‚ÌÅ‘å”
 #define CARD_NUM_MAX 13
 
+//#define DEBUG
+
+#ifdef DEBUG
+#define debug_printf printf
+#else
+#define SLASH() /
+#define debug_printf SLASH()SLASH()
+#endif
+
 #endif	// !_DEFINE_H_

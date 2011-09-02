@@ -1,7 +1,7 @@
 #include "include.h"
 
 void init_Ai(){
-	printf("init_Ai() start!\n");
+	debug_printf("init_Ai() start!\n");
 
 	char cdir[255];
 	strcpy_s(cdir, Current_dir);
@@ -30,6 +30,7 @@ void init_Ai(){
 			for(int j=0;j<Hand_max_num;j++) {
 				ai[ai_count].hand[j] = 0;
 			}
+			ai[ai_count].sum_rank = 0;
 
 			ai_count++;
 		}
@@ -50,15 +51,15 @@ void init_Ai(){
 	*/
 	
 	for(int j=0;j<AI_NUM;j++) {
-		printf("no:%d\n ",ai[j].no);
-		printf("name:%s\n",ai[j].name);
-		printf("pass:%d\n ",ai[j].pass);
-		printf("path:%s\n",ai[j].path);
-		printf("rank:%d\n",ai[j].rank);
+		debug_printf("no:%d\n ",ai[j].no);
+		debug_printf("name:%s\n",ai[j].name);
+		debug_printf("pass:%d\n ",ai[j].pass);
+		debug_printf("path:%s\n",ai[j].path);
+		debug_printf("rank:%d\n",ai[j].rank);
 		for(int z=0;z<Hand_max_num;z++) {
-			printf("%d ",ai[j].hand[z]);
+			debug_printf("%d ",ai[j].hand[z]);
 		}
-		printf("\n");
+		debug_printf("\n");
 	}
 	
 }

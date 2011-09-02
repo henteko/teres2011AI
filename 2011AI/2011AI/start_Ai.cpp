@@ -2,7 +2,7 @@
 
 int start_Ai(int order_Ai){
 
-	printf("start_Ai() start!\n");
+	debug_printf("start_Ai() start!\n");
 	/*
 	とりあえずgithubは使えたってことでおｋ？
 	.sshがないしｗｗｗとかから始まったが
@@ -96,12 +96,12 @@ int start_Ai(int order_Ai){
 	strcat_s(hoge," ");
 
 
-	printf("%s\n",hoge);
+	debug_printf("%s\n",hoge);
 
 	//exeファイル実行&返値代入
 	int ret = system(hoge);
 	
-	printf("exeからの返り血:%d\n",ret);
+	printf("%sつ:%d\n",ai[order_Ai].name,ret);
 
 
 	return ret;

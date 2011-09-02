@@ -65,24 +65,53 @@ void main(void) {
 				}
 				if(is_End()) {
 					gameMode = 2;
-					printf("全員順位決まったから終了\n");	
+					printf("全員順位が決まりました\n");
 				}else {
-					printf("ここが実行されたらis_End()は正常\n");	
+					debug_printf("ここが実行されたらis_End()は正常\n");	
 				}
+#ifdef DEBUG
 				//デバック用
 				gameMode = 2;
+#endif
 				break;
 			case 2:
 				//エンディング
-				//finish_Ran();
+				finish_Ran();
 				gameCount++;
 				gameMode = 0;
 				break;
 			default:
-				gameMode = 999;
+				gameMode = 2;
 
 		}
 	}
 
+#ifdef DEBUG
+
+#else
+	//最後の順位表示
+	int tmp_sum_rank[AI_NUM] = {0};
+	for(int i=0;i<AI_NUM;i++) {
+		tmp_sum_rank[i] = ai[i].sum_rank;
+	}
+	int mini_rank[2] = {999999,0};
+	int last_rank[AI_NUM] = {0};
+	for(int i=0;i<AI_NUM;i++) {
+		for(int j=0;j<AI_NUM;j++) {
+			if(mini_rank[0] > tmp_sum_rank[j]) {
+				mini_rank[0] = tmp_sum_rank[j];
+				mini_rank[1] = j;
+			}
+		}
+		last_rank[i] = mini_rank[1];
+		tmp_sum_rank[mini_rank[1]] = 999999;
+	}
+
+	printf("\n------最終結果発表!!------\n");
+	for(int i=0;i<AI_NUM;i++) {
+		printf("%d位:%s 点数:%d\n",i+1,ai[last_rank[i]].name,ai[last_rank[i]].sum_rank);
+	}
+	printf("-----お疲れ様でした!!-----\n");
+#endif
 
 }

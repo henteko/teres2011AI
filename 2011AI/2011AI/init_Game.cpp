@@ -1,14 +1,14 @@
 #include"include.h"
 
 void init_Game() {
-	printf("init_Game start!\n");
+	debug_printf("init_Game start!\n");
 
 	//N_sort_num‚ÌÄİ’è
 	if(CARD_NUM_MAX % 2 != 0) {
 		N_sort_num = N_sort_num + 1;
 	}
 
-	printf("‚±‚ÌƒQ[ƒ€‚Í%d•À‚×‚Å‚·\n",N_sort_num);
+	debug_printf("‚±‚ÌƒQ[ƒ€‚Í%d•À‚×‚Å‚·\n",N_sort_num);
 
 	//hand‚Ìİ’è
 	for(int i=0;i<AI_NUM;i++) {

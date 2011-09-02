@@ -2,7 +2,7 @@
 
 void distribute_Card(){
 
-	printf("distribute_Card start!!\n");
+	debug_printf("distribute_Card start!!\n");
 
 	int s=0;
 	for(int i=0;i<Hand_max_num;i++)
@@ -18,7 +18,7 @@ void distribute_Card(){
 
 	for(int j=0;j<AI_NUM;j++) {
 		for(int i=0;i<Hand_max_num;i++) {
-			printf("%3d",ai[j].hand[i]);
+			debug_printf("%3d",ai[j].hand[i]);
 		}
 	}
 }
