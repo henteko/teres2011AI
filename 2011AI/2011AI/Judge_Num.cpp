@@ -9,18 +9,21 @@ int judge_Num(int return_start_Ai)
 		{
 			if(r == ((CARD_NUM_MAX*i)+j+1))
 			{
-				if(r < ((CARD_NUM_MAX*i)+((CARD_NUM_MAX+1)/2)))
+				if(Field[i][j][0] == 0)
 				{
-					if(Field[i][j+1][0] == 1)
+					if(r < ((CARD_NUM_MAX*i)+((CARD_NUM_MAX+1)/2)))
 					{
-						return 1;
+						if(Field[i][j+1][0] == 1)
+						{
+							return 1;
+						}
 					}
-				}
-				else if(r > ((CARD_NUM_MAX*i)+((CARD_NUM_MAX+1)/2)))
-				{
-					if(Field[i][j-1][0] == 1)
+					else if(r > ((CARD_NUM_MAX*i)+((CARD_NUM_MAX+1)/2)))
 					{
-						return 1;
+						if(Field[i][j-1][0] == 1)
+						{
+							return 1;
+						}
 					}
 				}
 			}
