@@ -8,7 +8,7 @@ void next_Ai(int order_Ai) {
 	//return_start_AiにはAI.exeの返値が入る
 	int return_start_Ai = start_Ai(order_Ai); //実装途中?
 
-	//if(judge_num(return_start_Ai)) {
+	if(judge_Num(return_start_Ai)) {
 		//正しい場合
 
 		//場の更新
@@ -19,7 +19,7 @@ void next_Ai(int order_Ai) {
 			rank++;
 			printf("手札ゼロで上がりです\n");
 		}
-	//}else {
+	}else {
 		//正しくない場合
 
 		//パスを一回増やす
@@ -29,5 +29,5 @@ void next_Ai(int order_Ai) {
 			printf("ai.no %dは、パスを4回以上使いました\n",order_Ai);
 			ai[order_Ai].rank = -1;
 		}
-	//}
+	}
 }

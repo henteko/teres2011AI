@@ -2,7 +2,11 @@
 
 int judge_Num(int return_start_Ai)
 {
+
+	printf("judge_Num start!!\n");
+
 	int r = return_start_Ai;
+
 	for(int i=0;i<CARD_MARK;i++)
 	{
 		for(int j=0;j<CARD_NUM_MAX;j++)

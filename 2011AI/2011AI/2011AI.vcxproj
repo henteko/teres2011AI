@@ -76,10 +76,12 @@
   <ItemGroup>
     <ClCompile Include="ai_Rank.cpp" />
     <ClCompile Include="check_Hand.cpp" />
+    <ClCompile Include="distribute_Card.cpp" />
     <ClCompile Include="finish_Ran.cpp" />
     <ClCompile Include="init_Ai.cpp" />
     <ClCompile Include="init_Game.cpp" />
     <ClCompile Include="is_End.cpp" />
+    <ClCompile Include="Judge_Num.cpp" />
     <ClCompile Include="judge_Pass.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="make_Field.cpp" />

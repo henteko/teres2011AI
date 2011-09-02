@@ -46,10 +46,10 @@ void main(void) {
 			case 0:
 				//‰Šú‰»Œn
 				make_Field();
-				init_Ai();	//–¢À‘•™
-				//shuffle_Card();	//–¢À‘•
-				//distribute_Card();	//–¢À‘•
-				set_Order();	//–¢À‘•™
+				init_Ai();
+				shuffle_Card();
+				distribute_Card();
+				set_Order();
 
 				rank = 1;
 
@@ -60,7 +60,7 @@ void main(void) {
 				for(int i=0;i<AI_NUM;i++) {
 					if(ai_Rank(order_Ai[i]) == 0) {
 						//AI‚Ìƒ‰ƒ“ƒN‚ª‰Šú’l(0)‚¾‚Á‚½‚ÉÀs
-						next_Ai(order_Ai[i]);	//–¢À‘•
+						next_Ai(order_Ai[i]);
 					}
 				}
 				if(is_End()) {

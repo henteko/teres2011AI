@@ -2,8 +2,10 @@
  
  void shuffle_Card(void)
  {
+
+	 printf("shuffle_Card start\n");
 	   
-     int n[CARD_MARK*CARD_NUM_MAX-CARD_MARK];
+	 int n[CARD_MARK*CARD_NUM_MAX-CARD_MARK] = {0};
 	 
 	 srand( (unsigned)time( NULL ) );
 	 
@@ -49,5 +51,8 @@
 	 for(int j=0; j<CARD_MARK*CARD_NUM_MAX-CARD_MARK;j++)
 	  {
 	 shuffle_Card_result[j]=n[j];
+	 printf("%3d",shuffle_Card_result[j]);
 	 }	
+
+	 printf("\n");
  }

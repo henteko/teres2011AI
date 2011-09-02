@@ -16,4 +16,10 @@ void init_Game() {
 		//ƒƒ‚ƒŠŠm•Û‚ªo—ˆ‚È‚©‚Á‚½‚ç‹­§I—¹
 		if(ai[i].hand == NULL) exit(0);
 	}
+
+	for(int j=0;j<AI_NUM;j++) {
+		for(int i=0;i<Hand_max_num;i++) {
+			ai[j].hand[i] = 0;
+		}
+	}
 }
