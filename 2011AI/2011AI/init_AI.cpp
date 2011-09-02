@@ -30,7 +30,7 @@ void init_Ai(){
 			for(int j=0;j<Hand_max_num;j++) {
 				ai[ai_count].hand[j] = 0;
 			}
-			ai[ai_count].sum_rank = 0;
+			ai[ai_count].point = 0;
 
 			ai_count++;
 		}

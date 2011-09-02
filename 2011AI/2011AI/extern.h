@@ -76,6 +76,13 @@ extern int is_End();
 //最後の後処理
 extern void finish_Ran();
 
+//ゲームの最初だけに初期化するものを初期化する
 extern void init_Game();
+
+//パスがマックスに達した場合、その人が持ってたのを場に展開する
+extern void pass_Max(int order_Ai);
+
+//パスした人が居る場合のFieldのアップデート処理
+extern void pass_Field();
 
 #endif	// !_EXTERN_H_

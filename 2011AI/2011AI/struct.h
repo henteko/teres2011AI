@@ -19,8 +19,9 @@ typedef struct AI	// 1つのAIの型
 	int *hand;	//手持ちのカード:可変長配列として使用
 	int pass;	//パスした回数
 	int rank;	//順位
+	int point;
 	char path[255];	//AIのexeファイルへのパス
-	int sum_rank;
+	int sum_point;
 
 } AI_T;
 

@@ -101,7 +101,7 @@ int start_Ai(int order_Ai){
 	//exeファイル実行&返値代入
 	int ret = system(hoge);
 	
-	printf("%sつ:%d\n",ai[order_Ai].name,ret);
+	debug_printf("%sつ:%d\n",ai[order_Ai].name,ret);
 
 
 	return ret;

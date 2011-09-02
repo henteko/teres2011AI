@@ -21,5 +21,6 @@ void init_Game() {
 		for(int i=0;i<Hand_max_num;i++) {
 			ai[j].hand[i] = 0;
 		}
+		ai[j].sum_point = 0;
 	}
 }

@@ -40,6 +40,8 @@ void main(void) {
 	//最初だけ初期化するやつを初期化
 	init_Game();
 
+	printf("\n全%d回、%d並べを開始します\n\n",MAX_GAME_NUM,N_sort_num);
+
 	//mainのループ
 	while(gameCount < MAX_GAME_NUM) {
 		switch(gameMode) {
@@ -65,14 +67,10 @@ void main(void) {
 				}
 				if(is_End()) {
 					gameMode = 2;
-					printf("全員順位が決まりました\n");
+					printf("\n全員順位が決まりました\n");
 				}else {
 					debug_printf("ここが実行されたらis_End()は正常\n");	
 				}
-#ifdef DEBUG
-				//デバック用
-				gameMode = 2;
-#endif
 				break;
 			case 2:
 				//エンディング
@@ -90,28 +88,36 @@ void main(void) {
 
 #else
 	//最後の順位表示
-	int tmp_sum_rank[AI_NUM] = {0};
+	int tmp_sum_point[AI_NUM] = {0};
 	for(int i=0;i<AI_NUM;i++) {
-		tmp_sum_rank[i] = ai[i].sum_rank;
+		tmp_sum_point[i] = ai[i].sum_point;
 	}
 	int mini_rank[2] = {999999,0};
 	int last_rank[AI_NUM] = {0};
 	for(int i=0;i<AI_NUM;i++) {
 		for(int j=0;j<AI_NUM;j++) {
-			if(mini_rank[0] > tmp_sum_rank[j]) {
-				mini_rank[0] = tmp_sum_rank[j];
+			if(mini_rank[0] > tmp_sum_point[j]) {
+				mini_rank[0] = tmp_sum_point[j];
 				mini_rank[1] = j;
 			}
 		}
 		last_rank[i] = mini_rank[1];
-		tmp_sum_rank[mini_rank[1]] = 999999;
+		tmp_sum_point[mini_rank[1]] = 999999;
+
+		mini_rank[0] = 999999;
+		mini_rank[1] = 0;
 	}
 
 	printf("\n------最終結果発表!!------\n");
 	for(int i=0;i<AI_NUM;i++) {
-		printf("%d位:%s 点数:%d\n",i+1,ai[last_rank[i]].name,ai[last_rank[i]].sum_rank);
+		printf("%d位:%s 点数:%d\n",i+1,ai[last_rank[i]].name,ai[last_rank[i]].sum_point);
 	}
 	printf("-----お疲れ様でした!!-----\n");
+
+	//printf("Enterキーで終了です");
+	//char hoge;
+	//scanf_s("%c",&hoge);
+
 #endif
 
 }

@@ -1,4 +1,4 @@
-﻿2011/09/02 22:32:57 にビルドを開始しました。
+﻿2011/09/03 0:27:09 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\teres\C\teres2011AI\2011AI\2011AI\2011AI.vcxproj" (build ターゲット)。
      1>InitializeBuildStatus:
          "AlwaysCreate" が指定されたため "Debug\2011AI.unsuccessfulbuild" を作成しています。
@@ -21,6 +21,8 @@
          Debug\main.obj
          Debug\make_Field.obj
          Debug\next_Ai.obj
+         Debug\pass_Field.obj
+         Debug\pass_Max.obj
          Debug\set_Order.obj
          Debug\shuffle_card.obj
          Debug\start_Ai.obj
@@ -38,4 +40,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:02.98
+経過時間 00:00:03.12

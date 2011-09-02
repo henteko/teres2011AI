@@ -86,6 +86,8 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="make_Field.cpp" />
     <ClCompile Include="next_Ai.cpp" />
+    <ClCompile Include="pass_Field.cpp" />
+    <ClCompile Include="pass_Max.cpp" />
     <ClCompile Include="set_Order.cpp" />
     <ClCompile Include="shuffle_card.cpp" />
     <ClCompile Include="start_Ai.cpp" />

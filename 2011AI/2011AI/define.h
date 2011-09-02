@@ -9,7 +9,7 @@
 #define BASE_PATH "こんなもの、最初からなかったんや"
 
 //何回ゲームを繰り返しやらせるか
-#define MAX_GAME_NUM 1
+#define MAX_GAME_NUM 10
 
 //AIの数
 #define AI_NUM 1
@@ -22,6 +22,8 @@
 
 //カードの数字の最大数
 #define CARD_NUM_MAX 13
+
+
 
 //#define DEBUG
 
